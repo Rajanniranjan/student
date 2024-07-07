@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import NoteContainer from "./NoteContainer/NoteContainer";
 import Sidebar from "./Sidebar/Sidebar";
 import './indx.css';
@@ -48,6 +48,11 @@ function NoteApp() {
 
   return (
     <div className="App">
+      <div className="nav-buttons">
+        <Link to="/" className="nav-button">Home</Link>
+        <Link to="/resume" className="nav-button">Resume</Link>
+        <Link to="/todo" className="nav-button">Todo List</Link>
+      </div>
       <Sidebar addNote={addNote} />
       <NoteContainer
         notes={notes}

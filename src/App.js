@@ -1,9 +1,9 @@
- 
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import ResumeApp from './resume_builder/ResumeApp';
 import TodoApp from './Todolist/TodoApp';
 import NoteApp from './NotesApp/NoteApp';
+import Home from './Home/HomeApp'; // Correctly import the Home component
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         </nav>
         
         <Routes>
-          <Route path="/" element={<div>Home</div>} />
+          <Route path="/" element={<Home />} /> {/* Use the corrected Home component */}
           <Route path="/resume" element={<ResumeApp />} />
           <Route path="/todo" element={<TodoApp />} />
           <Route path="/noteapp" element={<NoteApp />} />

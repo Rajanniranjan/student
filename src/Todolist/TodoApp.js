@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 import Board from "./Components/Board/Board";
 import './indx.css';
 import "./TodoApp.css";
@@ -124,6 +124,11 @@ function TodoApp() {
     <div className="app">
       <div className="app_nav">
         <h1>Kanban Board</h1>
+        <div className="nav-buttons">
+          <Link to="/" className="nav-button">Home</Link>
+          <Link to="/resume" className="nav-button">Resume</Link>
+          <Link to="/noteapp" className="nav-button">Notes</Link>
+        </div>
       </div>
       <div className="app_boards_container">
         <div className="app_boards">
