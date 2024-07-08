@@ -5,13 +5,15 @@
 .App-nav {
   background-color: #282c34;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .App-nav-list {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 
@@ -36,6 +38,26 @@
   background-color: #ffcc7f;
   color: #20232a;
   border: 2px solid #ffcc7f;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.logout-container {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .App-logo {
@@ -181,4 +203,3 @@ p {
     padding: 10px 25px;
   }
 }
-
